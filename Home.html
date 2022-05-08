@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+     <title>Enicarthage website</title>
+     <link rel="stylesheet" href="Style.css">
+     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css' integrity='sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==' crossorigin='anonymous' />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
+</head>
+
+<body>
+     <nav class="nav">
+
+          <div id="marker"></div>  <!-- pour l'animation de navbar  -->
+          <div class="nav-menu flex-row">
+               <div class="nav-brand"><a href="#" class="text-gray">ENICarthage</a></div>
+
+               <div class="toggle-collapse">
+                    <div class="toggle-icons"><i class="fas fa-bars"></i></div>
+               </div>
+               <div>
+                    <ul class="nav-items">
+                         <li class="nav-link"><a href="Home.html" rel="noreferrer">home</a></li>
+                         <li class="nav-link"><a href="http://enicarthage.rnu.tn/fr/ecole/apropos" rel="noopener"  target="_blank">About Us</a></li>
+                         <li class="nav-link"><a href="http://enicarthage.rnu.tn/fr/contact" rel="noopener"  target="_blank">Contact Us</a></li>
+                    </ul>
+               </div>
+               <div class="social text-gray">
+                    <a href="https://www.facebook.com/groups/758139380908475" rel="noopener" target="_blank"><i  class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/school/ecole-nationale-d%E2%80%99ing%C3%A9nieurs-de-carthage-enicarthage/" rel="noopener"  target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
+               </div>
+          </div>
+     </nav>
+
+    <!--  <script type="text/javascript">
+          var marker=document.querySelector ('#marker');
+          var item=document.querySelectorAll('nav a');     just to try a trick of animation 
+
+          function indicator (e)
+          {
+               marker.style.left = e.offsetLeft+ "px";
+               marker.style.width = e.offsetWidth+ "px";
+          }
+
+          item.forEach (link =>{
+               link.addEventListener ('click', (e)=>{
+                    indicator (e.target);
+               })
+          } )
+
+     </script> -->
+
+
+     <main>
+          <section class="site-title">
+               <div class="site-background" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Computer Science Engineer </h3>
+                    <h1>Space of Teachers <br>
+                         <h2>Manage your Students</h2>
+                    </h1>
+
+                    <!-- 2 methodes for the link of sign in -->
+                    <!-- <button onclick="btnclicked()"> Submit </button> -->
+                    <script> 
+                         function btnclicked(){
+                              document.location.href="SignInUp.php";
+                         }
+                    </script>
+                    <button class="button" onclick="btnclicked()"> Sign in</button>
+                    
+               </div>
+          </section>
+          <section>
+               <div class="blog">
+                    <div class="container">
+                         <div class="owl-carousel owl-theme blog-post">
+                              <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                                   <img src="images/ai-nuclear-energy-background-future-innovation-disruptive-technology.jpg" alt="Post-1">
+                                   <div class="blog-title">
+                                        <h3>Artificiel Intelligence</h3>
+                                        <button class="button button-blog">know more</button>
+
+                                   </div>
+                              </div>
+                              <div class="blog-content" data-aos="fade-in" data-aos-delay="200">
+                                   <img src="images/online-communication.jpg" alt="Post-2">
+                                   <div class="blog-title">
+                                        <h3>Students Environment</h3>
+                                        <button class="button button-blog">know more</button>
+                                        <!-- <span>2 minutes</span> -->
+                                   </div>
+                              </div>
+                              <div class="blog-content" data-aos="fade-left" data-aos-delay="200">
+                                   <img src="images/group-students-posing-table.jpg" alt="Post-3">
+                                   <div class="blog-title">
+                                        <h3>The Clubs of Enicarthage </h3>
+                                        <button class="button button-blog">know more</button>
+                                        <!-- <span>2 minutes</span> -->
+                                   </div>
+                              </div>
+                              <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                                   <img src="images/professional-programmer-working-late-dark-office.jpg" alt="Post-4">
+                                   <div class="blog-title">
+                                        <h3>Competitive events of Students</h3>
+                                        <button class="button button-blog">know more</button>
+                                        <!-- <span>2 minutes</span> -->
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="owl-navigation">
+                              <span class="owl-nav-previous"><i class="fas fa-long-arrow-alt-left"></i></span>
+                              <span class="owl-nav-next"><i class="fas fa-long-arrow-alt-right"></i></span>
+                         </div>
+                    </div>
+               </div>
+          </section>
+
+          <footer class="footer">
+               <div class="container">
+                    <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+                         <h2>About us</h2>
+                         <p>this is the Home page of the mini-project that facilitate the navigation of the teachers of ENICarthage.</p>
+                    </div>
+                    <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+                         <h2>newsletter</h2>
+                         <p>stay update with our latest</p>
+                         <div class="form-element">
+                              <input type="email" placeholder="email"><span><i class="fas fa-chevron-right"></i></span>
+                         </div>
+                    </div>
+
+                    <div class="follow" data-aos="fade-left" data-aos-delay="200">
+                         <h2>follow us</h2>
+                         <p>let us be social</p>
+                         <div>
+                              <i class="fab fa-facebook-f"></i>
+                              <i class="fab fa-linkedin"></i>
+                         </div>
+                    </div>
+               </div>
+               <div class="rights flex-row">
+                    <h4 style="color: aliceblue;">&copy Copyright 2022 All rights reserved  </h4>
+               </div>
+               <div class="move-up">
+                    <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+               </div>
+          </footer>
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+          <script src="script.js"></script>
+</body>
+
+</html>

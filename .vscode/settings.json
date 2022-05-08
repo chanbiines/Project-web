@@ -1,0 +1,22 @@
+{
+    "liveServer.settings.port": 5502,
+    "launch": {
+    "inputs": [],
+        "configurations": [],
+        "compounds": []
+    },
+    "json.schemas": [
+    {
+        "fileMatch": [
+            "/myfile"
+        ],
+        "url": "schemaURL"
+    }
+    ],
+    "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
+    "phpformatter.additionalExtensions": [
+    
+    ],
+    "php.debug.executablePath": "",
+    "php.executablePath": "C:\\xampp\\php\\php.exe"
+}
